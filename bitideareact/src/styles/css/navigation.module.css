@@ -1,0 +1,22 @@
+.appContainer{
+    position: fixed;
+    width:100%;   
+    z-index:1;
+}
+.nav{
+    background-color: rgb(73, 109, 72)!important;
+}
+
+.littlepic{
+    width:45px;
+    height:45px;
+    border:3px solid rgb(255, 255, 255,.4);
+    border-radius:50%;
+}
+
+@media screen and (max-width:800px){
+    .profileTab{
+        margin-right:100%;
+        width:100%;
+    }
+}

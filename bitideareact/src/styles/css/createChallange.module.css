@@ -1,0 +1,277 @@
+.spaceFromTop{
+    width:100%;
+    height:76px;
+}
+
+.chooseContainer{
+    display:100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseBox{
+    border-radius:20px;
+    transition:250ms ;
+    width:500px;
+    height:500px;
+    margin:25px;
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.publicBox{
+    background: url("../../assets/public.png");
+}
+.privateBox{
+    background: url("../../assets/private.png");
+}
+
+.chooseBox:hover{
+    transform:scale(1.12);
+    border-radius:200px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.groupsCardContainer{
+    padding:0px!important;
+    margin:0px!important;
+}
+
+.groupsCard{
+    list-style:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    padding:0px;
+}
+
+.groupsCard > li{
+    transition:250ms;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.groupsCard > li:hover{
+    background-color: rgb(243, 243, 243);
+    cursor:pointer;
+}
+
+.groupsCard > li:last-child{
+    border-bottom:none;
+}
+
+.formContainer{
+    margin:50px 300px 0px 300px;
+}
+
+.challangeHeader{
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,.3);
+    width:500px;
+    font-size:30px;
+    margin-bottom:25px;
+}
+.challangeHeader:focus{
+    outline:none;
+}
+
+.testScenarios{
+    list-style:none;
+}
+.testScenarios > li{
+    width:100%;
+    min-height:70px;
+    margin:10px 0px 10px 0px;
+    border:1px solid rgba(0,0,0,.1);
+    display:flex;
+    align-items: center;
+    padding-left:10px;
+    padding:30px 5px 30px 5px;
+}
+.testScenarios > li:last-child{
+    border:none;
+}
+
+.addButton{
+    margin:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    background-color: rgb(115, 152, 173);
+    color:white;
+    font-size:30px;
+}
+.addButtonInside{
+    transition:250ms all;
+    cursor:pointer;
+    width:49px;
+    height:47px;
+    border-radius:100%;
+    background-color: rgba(135, 181, 207);
+    color:white;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.addButtonInside:active{
+    width:50px;
+    height:50px;
+}
+
+.parameters{
+    list-style:none;
+    display: grid;
+    margin:auto;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:50px;
+}
+.parameters > li{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height:70px;
+    width:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parameter{
+    cursor:pointer;
+}
+
+.parameters > li:last-child{
+    padding:0px;
+}
+
+.parameterInteractions{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left:180px;
+    margin-bottom:70px;
+}
+
+.parameterInteractions > div{
+    margin:2px;
+    width:25px;
+    height:25px;
+    cursor:pointer;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    font-size:22px;
+}
+
+.parameterEditButton{
+    background-color: rgb(67, 126, 106);
+}
+
+.parameterDenyButton{
+    background-color: brown;
+}
+
+.operations{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+.operations > div{
+    width:90px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+}
+
+.saveButton{
+    background-color: rgb(132, 185, 51);
+    margin-right:20px;
+}
+
+.denyButton{
+    background-color: brown;
+}
+
+.denyScenario{
+    width:30px;
+    height:30px;
+    border-radius:100px;
+    background-color: brown;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:24px;
+    font-weight: bold;
+    position: absolute;
+    margin-bottom:130px;
+    cursor:pointer;
+}
+
+.parameterInputs{
+    display:flex;
+    overflow:auto;
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+
+.formGroupP > Input{
+    width: 150px !important;
+    margin-right:10px;
+}
+
+.pageChange{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeButton{
+    background-color: yellowgreen;
+    border-radius:100px;
+    width:30px;
+    height:30px;
+    margin:0px 10px 0px 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.previousButton::before{
+    content:"<"
+}
+.nextButton::before{
+    content:">"
+}
+.parameterPagePassive{
+    display:none;
+}
+
+.parameterPageActive{
+    display:block;
+}

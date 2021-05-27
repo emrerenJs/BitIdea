@@ -1,0 +1,276 @@
+.spaceFromTop{
+    width:100%;
+    height:76px;
+}
+
+.postOwner{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:absolute;
+    width:15%;
+    min-height:200px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(247, 253, 247);
+    flex-direction: column;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left:2.3%;
+}
+
+.postOwnerPic{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom:10px;
+}
+
+.postOwnerPic > img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.postOwnerUsername{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:70%;
+
+}
+
+.postOwnerUsername > p{
+    text-align: center;
+    width:100%;
+    word-wrap: break-word;
+}
+
+.appContainer{
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigPicture{
+    width:60%;
+    height:500px;
+    background-color: gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:25px;
+}
+
+.bigPicture img{
+    width:100%;
+    height:500px;
+}
+
+.addPhotoButton{
+    font-size:100px;
+    color:rgb(255,255,255,.65);
+    cursor:pointer;
+    position:absolute;
+}
+
+.postBody{
+    width:60%;
+}
+
+.emptyElement{
+    width:100%;
+    height:100px;
+    background-color: rgb(118, 163, 46);
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.addElementButton{
+    font-size: 60px;
+    color:white;
+    cursor:pointer
+}
+
+.postComments{
+    width:60%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin:100px;
+}
+
+.sendComment{
+    width:100%;
+    height:170px;
+    padding:10px;
+    display:flex;
+    margin-bottom:10px;
+}
+
+.yourPhoto{
+    width:150px;
+    height:100%;
+}
+
+.yourPhoto > img{
+    width:100%;
+    height:100%;
+}
+
+.commentArea{
+    width:70%;
+    height:100%;
+    margin: 0px 40px 0px 40px;
+}
+.commentArea > textarea{
+    width:100%;
+    height:100%;
+    resize:none;
+    display:inline-block;
+    vertical-align: middle;
+    font-size:20px;
+    padding:10px 0px 0px 20px;
+    border:1px solid rgb(0,0,0,.4);
+    border-radius:10px;
+}
+
+.commentArea > textarea:focus{
+    outline:none;
+}
+.submitButton{
+    width:100px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(35, 145, 8);
+    color:white;
+    cursor:pointer;
+    align-self:flex-end;
+}
+
+.commentDivider{
+    width:100%;
+    border-bottom:3px dotted rgb(0,0,0,.1);
+    margin-bottom:20px;
+}
+
+.commentDivider > p{
+    padding-left:10px;
+    font-size:24px;
+    font-weight:bold;
+    color:rgb(0,0,0,.5);
+}
+.commentsDivider{
+    border-bottom:1px solid rgb(0,0,0,.1);
+}
+
+.sendedComment{
+    width:100%;
+    height:100px;
+    margin:10px 10px 10px 10px;
+    display:flex;
+    flex-direction: row;
+}
+
+.sendedComments{
+    width:100%;
+}
+
+.sendedCommentArea{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.commentPhoto{
+    width:9%;
+    height:100%;
+}
+
+.commentPhoto > img{
+    width:100%;
+    height:100%;
+}
+
+.commentBody{
+    width:84%;
+    height:100%;
+    padding-left:10px;
+}
+
+.comment {
+    font-size:14px;
+} 
+
+.commentOwner{
+    font-weight:bold;
+    font-size:20px;
+}
+
+figure{
+    text-align: center;
+}
+
+.commentDate{
+    position:absolute;
+    margin-top:85px;
+    margin-left:1000px;
+}
+
+.postHeader{
+    margin-bottom:10px;
+    width:60%;
+    height:70px;
+    text-align: center;
+}
+
+.postHeader textarea{
+    border:none;
+    font-size:35px;
+    text-align: center;
+    font-weight:bold;
+    resize:none;
+    height:75px;
+    width:100%;
+    overflow:hidden;
+    line-height:110%;
+    vertical-align:middle;
+    border-bottom:1px solid black;
+}
+
+.postHeader textarea:focus{
+    outline:none;
+}
+
+.postOperations{
+    width:60%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.postOperations > div{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:24px;
+    border-radius:10px;
+    margin:10px;
+    color:white;
+}
+
+.cancelButton{
+    background-color: rgb(196, 25, 25);
+}
+
+.sendButton{
+    background-color: rgb(116, 182, 17);
+}

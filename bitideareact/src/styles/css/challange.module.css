@@ -1,0 +1,63 @@
+.spaceFromTop{
+    width:100%;
+    height:76px;
+}
+.editor{
+    width:100%;
+    height:100%;
+    position:relative;
+    font-family:monospace!important;
+    font-size:16px !important;
+    direction:ltr !important;
+    text-align: left !important;
+    letter-spacing: 0 !important;
+    border:1px solid rgba(0,0,0,.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.challangeContainer{
+    width:80%;
+    margin:0px 10% 0px 10%;
+    display:flex;
+    flex-direction: column;
+}
+.challangeHeader{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.challangeName{
+    font-size:30px;
+}
+
+.challangeBody{
+    display:flex;
+    height:500px;
+}
+.challangeDescription{
+    width:30%;
+    background-color: rgb(235, 235, 235);
+    border-radius:10px;
+    padding:10px;
+    max-height:500px;
+    overflow-y:auto; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.codeEditor{
+    width:70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.challangeFooter{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+.submitChallange{
+    background-color: rgb(144, 189, 76);
+    padding:10px;
+    border-radius:10px;
+    margin-top:10px;
+    cursor:pointer;
+    color:white;
+}

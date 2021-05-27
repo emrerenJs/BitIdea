@@ -1,0 +1,425 @@
+.spaceFromTop{
+    width:100%;
+    height:76px;
+}
+
+.secretContent{
+    background: url("../../assets/logo403.png");
+    width:100%;
+    height:500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.infoAppContainer{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: rgb(245, 255, 240);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.jrNotifications{
+    display:flex;
+}
+
+.jrNotifCount{
+    position: absolute;
+    width:20px;
+    height:20px;
+    border-radius: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    margin-left:15px;
+}
+
+.infoHeader{
+    position:fixed;
+}
+
+.infoHeaderFlag{
+    padding:10px 0px 10px 15px;
+    width:120px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(53, 63, 49);
+}
+
+.infoGroup{
+   width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoGroup > div{
+    width:400px;
+    text-align: center;
+}
+
+.groupName{
+    font-size:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupOwner{
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.groupOwner > img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+
+.groupOwner > div > h1{
+    font-size:24px;
+    margin: 0px !important;
+}
+
+.sendInviteInput{
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,.4);
+}
+
+.sendInviteInput:focus{
+    outline:none;
+}
+
+.infoInteraction{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.infoInteraction .infoButton{
+    min-width:80px;
+    padding:0px 10px 0px 10px;
+    height:25px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    float:left;
+}
+
+.infoJoinButton{
+    background-color: #7bc54a;
+}
+.infoJoinedButton{
+    background-color: rgb(148, 170, 145);
+}
+.infoAcceptButton{
+    background-color: rgb(74, 127, 197);
+}
+.infoLeaveButton{
+    background-color: rgb(197, 78, 74);
+}
+.infoRemoveGroupButton{
+    background-color: rgb(114, 19, 19);
+
+}
+.infoMembers{
+    cursor:pointer;
+}
+
+.joinRequests{
+    list-style:none;
+}
+
+.joinRequest{
+    border-bottom:1px solid rgba(0,0,0,.1);
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    margin:5px 0px 5px 0px;
+    padding:5px 0px 10px 0px;
+}
+
+.jrhr{
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    margin-top:5px;
+}
+
+.jrUserPhoto > img{
+    width:80px;
+    height:80px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.jrInfo{
+    font-size:18px;
+}
+
+.jrButtons{
+    margin-left:auto;
+    width:140px;
+    align-self: center;
+}
+
+.jrButtons > div{
+    float:left;
+    margin-right:10px;
+    width:50px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.jrAcceptButton{
+    background-color: #7bc54a;
+}
+
+.jrDenyButton{
+    background-color: red;
+}
+
+
+.kickButtons{
+    margin-left:auto;
+    width:70px;
+    align-self: center;
+}
+
+.kickButtons > div{
+    width:50px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.announcementsComponent{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcementsContainer{
+    width:60%;
+    border:1px solid rgba(0,0,0,.1);
+    padding:0px 25px 0px 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shareAnnouncement{
+    width:100%;
+    height:95px;
+    border-radius:10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin:25px 0px 25px 0px;
+    display:flex;
+    align-items: center;
+}
+
+.profilePicture > img{
+    width:75px;
+    border-radius:100px;
+    margin:0px 25px 0px 10px;
+}
+
+.shareAnnouncementInput{
+    width:100%;
+    display:flex;
+}
+
+.shareAnnouncementInput > input{
+    width:90%;
+    height:50px;
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,.2);
+}
+
+.shareAnnouncementInput > input:focus{
+    outline:none;
+}
+
+.shareAnnouncementInput > div{
+    width:7%;
+    margin:auto;
+    height:50px;
+    background-color: rgb(103, 153, 111);
+    color:white;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.announcements{
+    list-style:none;
+}
+
+.announcementContainer{
+    width:100%;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius:10px;
+    margin:20px 0px 20px 0px;
+    min-height:200px;
+}
+
+.announcementComments{
+    background-color: #f0f5ec;
+}
+
+.announcementComments > ul{
+    list-style:none;
+}
+.announcerHeader{
+    display:flex;
+}
+.announcerPhoto > img{
+    width:65px;
+    border-radius:100px;
+    margin-right:15px;
+}
+.announcerInfo > b{
+    font-size:20px;
+}
+
+.announcement{
+    font-size:20px;
+    margin-left:10px;
+    word-break:break-all;
+}
+
+.announcementSelf{
+    padding:10px;
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.2);
+}
+
+.announcementComment{
+    padding-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.commentInfo{
+    display:flex;
+    padding:10px 10px 0px 10px;
+}
+
+.commentInfo > img{
+    width:40px;
+    height:40px;
+    border-radius:100px;
+    margin-right:10px;
+}
+.commentInfo > b {
+    margin-right:10px;
+    margin-top:5px;
+}
+.commentInfo > p{
+    margin-top:5px;
+}
+.comment{
+    padding-left:15px;
+}
+
+.announcementSendComment{
+    display:flex;
+    align-items:center;
+    width:100%;
+    padding:10px;
+    border-top:1px solid rgba(0,0,0,.2);
+}
+
+.commentProfilePicture > img{
+    width:45px;
+    height:45px;
+    border-radius:100px;
+    margin-right:10px;
+}
+.commentInput{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.commentInput > div{
+    width:7%;
+    margin:auto;
+    height:50px;
+    background-color: rgb(103, 153, 111);
+    color:white;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.commentInput > input{
+    width:90%;
+    height:50px;
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,.3);
+}
+.commentInput > input:focus{
+    outline:none;
+}
+
+.changeTabs{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeTabs > ul{
+    list-style: none;
+}
+
+.changeTabs > ul > li{
+    float:left;
+    margin:0px 10px 0px 10px;
+    border-bottom:1px solid rgba(0,0,0,.2);
+    font-size:24px;
+    cursor:pointer;
+}
+
+.changeTabs > ul > .active{
+    color:rgb(55, 120, 194);
+}
+.challangesContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+.challangesContainer > li{
+    cursor:pointer;
+    padding:5px 25px 5px 25px;
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

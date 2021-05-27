@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.disabledButton{
+    pointer-events: none;
+    background-color: #839976;
+}
+
+.appContainer{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9eda83;
+}
+
+.authSquare{ /*platform based*/
+    background-color: white;
+    position:relative;
+    height:500px;
+    display:flex;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.authFormPage{
+    width:100%;
+    height:100%;
+}
+
+.authLoginPage{
+    width:100%;
+    height:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.authRegisterPage{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginFooterMessages{
+    width:80%;
+    height:40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:25px 30px 0px 40px;
+    color:rgb(189, 42, 42);
+}
+
+.registerFooterMessages{
+    width:80%;
+    height:30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px 20px 0px 60px;
+}
+
+.errorMessage{
+    color:rgb(216, 45, 45);
+}
+.successMessage{
+    color:#9ece83;
+}
+
+.loginFooterMessages > ul > li{
+    margin-top:5px;
+}
+
+.registerFooterMessages > ul > li{
+    margin-top:5px;
+}
+
+.inputGroup{
+    width:60%;
+    margin:20px 0px 20px 0px;
+    border-bottom:1px solid #9ece83;
+}
+
+.inputGroup > div{
+    width:15%;
+    float:left;
+    background-color:#9eda83;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputGroup > div > svg{
+    color:white;
+}
+
+.inputGroup > input{
+    float:left;
+    height:30px;
+    width:80%;
+    border:none;
+    font-size:20px;
+    padding-left:5%;
+}
+.inputGroup > input:focus{
+    outline:none;
+    background-color: rgba(77, 177, 47, 0.411);
+    color:black;
+}
+
+.button{
+    cursor:pointer;
+    background-color: #9ece83;
+    padding:10px 20px 10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+
+.button:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.mobileAuthSquare{ /*platform based*/
+    display:none;
+    width:320px;
+    height:500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+}
+.mobileAuthHeader{
+    width:100%;
+    height:110px;
+    background-color: #9eda83;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileAuthHeader > img{
+    margin-top:-10px;
+}
+
+.mobileAuthBody{
+    width:100%;
+    height:280px;
+}
+
+.mobileAuthFooter{
+    width:100%;
+    height:110px;
+    background-color: #9eda83;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerButtons{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMainButton{
+    border-radius:10px;
+    padding:5px 15px 5px 15px;
+    color:white;
+    font-size:20px;
+    background-color: rgb(114, 180, 52);
+    font-weight: bold;
+    cursor:pointer;
+}
+.mobilePrimaryButton{
+    border-radius:10px;
+    padding:5px 10px 5px 10px;
+    color:white;
+    font-size:14px;
+    margin-top:5px;
+    background-color: #436633;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.logoPage{ /*platform based*/
+    position: absolute;
+    background-color:rgb(161, 228, 130);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:500ms all;
+}
+
+.leftLogoPage{ /*platform based*/
+    position:absolute;
+}
+
+.rightLogoPage{ /*platform based*/
+    position:absolute;
+    right:0;
+}
+
+.toggleButton{
+    border-radius:10px;
+    padding:10px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(114, 180, 52);
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none;
+    padding-bottom:0px;
+}
+
+.toggleButton:hover{
+    text-decoration: none;
+    color:white;
+}
+
+@media screen and (min-width:801px){
+    /*pc*/
+    .authSquare{
+        width:800px;
+    }
+    .logoPage{
+        width:400px;
+        height: 100%;
+    }
+    .leftLogoPage{
+        right:calc(100% - 400px);
+    }
+}
+
+@media screen and (max-width:800px){
+    /*tablet*/
+    .authSquare{
+        width:600px;
+    }
+    .logoPage{
+        width:300px;
+        height: 100%;
+    }
+    .leftLogoPage{
+        right:calc(100% - 300px);
+    }
+}
+
+@media screen and (max-width:600px){
+    /*mobile*/
+    .authSquare{
+        display:none;
+    }
+    .mobileAuthSquare{
+        display:block;
+    }
+}
