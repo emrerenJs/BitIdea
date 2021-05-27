@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bitidea
+    username: root
+    password: emcobase35
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  mail:
+    protocol: smtp
+    host: smtp.gmail.com
+    port: 587
+    username: bitideaapp@gmail.com
+    password: 1998emre
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  mvc:
+    static-path-pattern: /static/**
+  data:
+    mongodb:
+      uri: mongodb://emre:emcobase35@localhost:27017/Bitidea?authSource=admin
