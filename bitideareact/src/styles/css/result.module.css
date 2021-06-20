@@ -1,0 +1,11 @@
+.appContainer{
+    padding:100px;
+}
+
+.headerText{
+    font-size:24px;
+}
+
+.bodyList{
+    list-style:none;
+}

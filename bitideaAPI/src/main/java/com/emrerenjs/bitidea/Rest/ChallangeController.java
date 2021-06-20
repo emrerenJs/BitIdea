@@ -7,6 +7,7 @@ import com.emrerenjs.bitidea.Model.Challange.ChallangeIdModel;
 import com.emrerenjs.bitidea.Model.Challange.ChallangeResponeModel;
 import com.emrerenjs.bitidea.Model.Challange.CreateChallangeModel;
 import com.emrerenjs.bitidea.Model.General.GeneralResponse;
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import com.emrerenjs.bitidea.Model.Group.GroupOperationsModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,11 @@ public class ChallangeController {
 
     @Autowired
     private ChallangeService challangeService;
+
+    @PostMapping("/getByKey")
+    public List<Challange> getByKey(@RequestBody SearchKeyModel searchKeyModel){
+        return this.challangeService.getChallangesByKey(searchKeyModel);
+    }
 
     @PostMapping("/createChallange")
     public ResponseEntity<?> createChallange(@RequestBody Challange challange){

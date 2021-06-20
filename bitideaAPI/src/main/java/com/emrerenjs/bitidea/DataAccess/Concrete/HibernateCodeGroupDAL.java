@@ -13,6 +13,8 @@ import com.emrerenjs.bitidea.DataAccess.Abstract.CodeGroupDAL;
 import com.emrerenjs.bitidea.Entity.MySQL.CodeGroup;
 import com.emrerenjs.bitidea.Error.RecordNotFoundException;
 
+import java.util.List;
+
 @Repository
 public class HibernateCodeGroupDAL implements CodeGroupDAL{
 
@@ -60,5 +62,15 @@ public class HibernateCodeGroupDAL implements CodeGroupDAL{
 	public void removeMemberFromGroup(ProfilesCodeGroups profilesCodeGroup) {
 		Session session = entityManager.unwrap(Session.class);
 		session.remove(profilesCodeGroup);
+	}
+
+	@Override
+	@Transactional
+	public List<CodeGroup> getGroupByKey(String key) {
+		Session session = entityManager.unwrap(Session.class);
+		List<CodeGroup> codeGroups = session
+				.createQuery("FROM CodeGroup as cg where cg.name like '%" + key + "%'",CodeGroup.class)
+				.getResultList();
+		return codeGroups;
 	}
 }

@@ -4,11 +4,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -41,6 +39,12 @@ public class PostController {
     
     @Autowired
     private ProfileService profileManager;
+
+    @PostMapping("/getByKey")
+    public List<Post> getByKey(@RequestBody SearchKeyModel searchKeyModel){
+        List<Post> posts = postDAL.searchByKey(searchKeyModel.getKey().toLowerCase());
+        return posts;
+    }
 
     @PostMapping("/uploadToTemp")
     public ResponseEntity<?> uploadToTemp(@RequestParam("body") MultipartFile multipartFile) throws IOException {

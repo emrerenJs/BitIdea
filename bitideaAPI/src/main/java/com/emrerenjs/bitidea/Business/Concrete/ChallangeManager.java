@@ -16,6 +16,7 @@ import com.emrerenjs.bitidea.Entity.MySQL.ProfilesCodeGroups;
 import com.emrerenjs.bitidea.Error.RecordNotFoundException;
 import com.emrerenjs.bitidea.Error.WrongChallangeAnswerException;
 import com.emrerenjs.bitidea.Model.Challange.*;
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import com.emrerenjs.bitidea.Model.Security.UserDetailsModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -23,6 +24,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 @Service
@@ -118,5 +121,11 @@ public class ChallangeManager implements ChallangeService {
         }else{
             throw new RecordNotFoundException("Aradığınız challange bulunamadı!");
         }
+    }
+
+    @Override
+    public List<Challange> getChallangesByKey(SearchKeyModel searchKeyModel) {
+        List<Challange> challanges = challangeDAL.searchByKey(searchKeyModel.getKey().toLowerCase());
+        return challanges;
     }
 }

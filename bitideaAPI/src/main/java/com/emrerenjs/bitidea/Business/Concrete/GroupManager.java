@@ -10,6 +10,7 @@ import com.emrerenjs.bitidea.DataAccess.Abstract.ChallangeDAL;
 import com.emrerenjs.bitidea.Entity.MongoDB.Challange;
 import com.emrerenjs.bitidea.Entity.MySQL.*;
 import com.emrerenjs.bitidea.Error.RecordNotFoundException;
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import com.emrerenjs.bitidea.Model.Group.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -295,6 +296,12 @@ public class GroupManager implements GroupService{
 	public List<CodeGroup> getUserGroups() {
 		Profile profile = this.getActiveProfile();
 		return profile.getGroups().stream().map(ProfilesCodeGroups::getCodeGroup).collect(Collectors.toList());
+	}
+
+	@Override
+	public List<CodeGroup> getGroupsByKey(SearchKeyModel searchKeyModel) {
+		List<CodeGroup> codeGroups = codeGroupDAL.getGroupByKey(searchKeyModel.getKey());
+		return codeGroups;
 	}
 
 	@Override

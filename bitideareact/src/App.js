@@ -16,6 +16,7 @@ import Group from "./components/pages/GroupPage/Group";
 import CreateGroup from "./components/pages/CreateGroupPage/CreateGroup"
 import CreateChallange from "./components/pages/CreateChallangePage/CreateChallange";
 import Challange from './components/pages/ChallangePage/Challange';
+import Result from './components/pages/ResultPage/Result';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path={"/@:username"} component={Profile} />
             <Route path={"/post/@:postid"} component={Post} />
             <Route path={"/group/@:groupName"} component={Group} />
+            <Route path={"/search/:category/:key"} component={Result} />
             <PrivateRoute path={"/challange/@:challangeid"} component={Challange}/>
             <PrivateRoute exact path="/editProfile" component={EditProfile} />
             <PrivateRoute exact path="/createPost" component={CreatePost} />

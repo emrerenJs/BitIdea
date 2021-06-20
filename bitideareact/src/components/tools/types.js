@@ -3,7 +3,7 @@ module.exports = {
         "Integer":"int",
         "Double":"double",
         "Char":"char",
-        "String":"string",
+        "String":"String",
         "Boolean":"boolean"
     }
 };

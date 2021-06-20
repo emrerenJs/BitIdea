@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.emrerenjs.bitidea.Entity.MySQL.CodeGroup;
 import com.emrerenjs.bitidea.Entity.MySQL.GroupAnnouncement;
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import com.emrerenjs.bitidea.Model.Group.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,13 +17,15 @@ import com.emrerenjs.bitidea.Business.Abstract.GroupService;
 import com.emrerenjs.bitidea.Entity.MySQL.Profile;
 import com.emrerenjs.bitidea.Model.General.GeneralResponse;
 
+import javax.swing.*;
+
 @RestController
 @RequestMapping("/group")
 public class GroupController {
 
 	@Autowired
 	private GroupService groupService;
-	
+
 	/*GROUP OWNER OPERATIONS*/
 	@PostMapping("/createGroup")
 	public ResponseEntity<?> createGroup(@RequestBody GroupOperationsModel groupOperationsModel){
@@ -124,6 +127,11 @@ public class GroupController {
 	/*USER OPERATIONS*/
 	
 	/*MODEL RETURNS*/
+	@PostMapping("/getByKey")
+	public List<CodeGroup> getByKey(@RequestBody SearchKeyModel searchKeyModel){
+		List<CodeGroup> cg = groupService.getGroupsByKey(searchKeyModel);
+		return cg;
+	}
 	@PostMapping("/getGroupByGroupName")
 	public CodeGroupResponseModel getGroupByGroupName(@RequestBody GroupOperationsModel groupOperationsModel){
 		if(groupOperationsModel.isFieldsNull()){

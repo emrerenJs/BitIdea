@@ -5,6 +5,7 @@ import java.util.List;
 import com.emrerenjs.bitidea.Entity.MySQL.CodeGroup;
 import com.emrerenjs.bitidea.Entity.MySQL.GroupAnnouncement;
 import com.emrerenjs.bitidea.Entity.MySQL.Profile;
+import com.emrerenjs.bitidea.Model.General.SearchKeyModel;
 import com.emrerenjs.bitidea.Model.Group.*;
 
 public interface GroupService {
@@ -34,4 +35,6 @@ public interface GroupService {
     CodeGroupResponseModel getGroupByGroupName(GroupOperationsModel groupOperationsModel);
 
     List<CodeGroup> getUserGroups();
+
+    List<CodeGroup> getGroupsByKey(SearchKeyModel searchKeyModel);
 }
